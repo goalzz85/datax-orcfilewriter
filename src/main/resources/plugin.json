@@ -1,0 +1,7 @@
+{
+  "name": "orcfilewriter",
+  "class": "com.alibaba.datax.plugin.writer.orcfilewriter.OrcFileWriter",
+  "description": "use put: prod. mechanism: write data to orc file",
+  "developer": "goalzz85"
+}
+

@@ -1,0 +1,15 @@
+{
+  "name": "orcfilewriter",
+  "parameter": {
+    "path": "",
+    "fileName": "",
+    "column": [
+      {
+        "name": "",
+        "type": "",
+        "toType": ""
+      }
+    ],
+    "writeMode": ""
+  }
+}
