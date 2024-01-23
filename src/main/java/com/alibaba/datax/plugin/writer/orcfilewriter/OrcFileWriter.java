@@ -228,9 +228,8 @@ public class OrcFileWriter extends Writer {
             List<Record> recordBuffList = new ArrayList<>(batchSize);
             Record record = null;
             while ((record = lineReceiver.getFromReader()) != null) {
+                recordBuffList.add(record);
                 if (recordBuffList.size() != batchSize) {
-                    recordBuffList.add(record);
-                } else {
                     //写入具体数据
                     OrcFileHelper.writeRowToBatch(rowBatch, this.columnTypeList, recordBuffList);
                     try {
